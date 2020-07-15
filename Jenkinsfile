@@ -1,8 +1,10 @@
 pipeline{
-    agent any
-    parameters {
-        string(name:'version',defaultValue:'1.0.0',description:'build version')
+    agent {
+        docker {
+            image: 'node:slim'
+        }
     }
+    
 
     stages {
         stage('Install Packages') {
