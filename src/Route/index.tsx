@@ -3,7 +3,7 @@
  * Date: 2020/06/09
  */
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 import * as Pages from '../Pages/index';
 import * as Components from '../Components/index';
 
