@@ -16,9 +16,9 @@ pipeline{
             }
         }
 
-        stage('run Project') {
+        stage('Run Project') {
             steps {
-                sh 'npm start'
+                sh 'sudo npm start'
             }
         }
     }
