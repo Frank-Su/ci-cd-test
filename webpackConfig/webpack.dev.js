@@ -35,7 +35,7 @@ const devConfig = {
         contentBase: './dist',
         historyApiFallback: true,
         open: true,
-        port: 8033,
+        port: 3000,
         hot: true,
     },
     plugins: [

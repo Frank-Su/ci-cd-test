@@ -16,9 +16,11 @@ pipeline{
             }
         }
 
-        stage('Build Project') {
+        stage('run Project') {
             steps {
-                sh 'npm run build'
+                sh './script/start.sh'
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                sh './jenkins/scripts/kill.sh'
             }
         }
     }

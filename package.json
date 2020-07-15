@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "jest --watchAll",
-        "start": "cross-env CEM=dev webpack-dev-server  --config ./webpackConfig/webpack.dev.js",
-        "build": "cross-env CEM=dev webpack --config ./webpackConfig/webpack.prod.js",
+        "start": "webpack-dev-server  --config ./webpackConfig/webpack.dev.js",
+        "build": "webpack --config ./webpackConfig/webpack.prod.js",
         "build_pro": "cross-env CEM=prod webpack --config ./webpackConfig/webpack.prod.js",
         "start_dumy": "cross-env CEM=prod_dumy webpack-dev-server  --config ./webpackConfig/webpack.dev.js ",
         "build_dumy": "cross-env CEM=prod_dumy webpack --config ./webpackConfig/webpack.prod.js ",
