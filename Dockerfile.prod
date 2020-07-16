@@ -1,0 +1,14 @@
+FROM node:slim
+
+# Set the working directory
+WORKDIR /usr/src/app/
+
+USER root
+# Copy the app's source code from the host to your image filesystem
+COPY ./ ./
+
+# Run the command inside the image filesystem
+RUN npm install
+
+# Run the specified command within the container
+CMD ["npm", "run", "build:prod:nohash"]
